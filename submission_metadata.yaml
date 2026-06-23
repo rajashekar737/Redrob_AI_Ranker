@@ -2,7 +2,7 @@ team_name: Ponnam Raja Shekar
 
 project_name: Redrob AI Ranker
 
-github_repo_url: TO_BE_ADDED
+github_repo_url: github_repo_url: https://github.com/rajashekar737/Redrob_AI_Ranker
 
 approach:
   semantic_search: Sentence Transformers + FAISS
