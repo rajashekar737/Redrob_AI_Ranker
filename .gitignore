@@ -1,0 +1,10 @@
+venv/
+embeddings/
+output/
+
+data/candidates.jsonl
+
+*.npy
+*.faiss
+__pycache__/
+*.pyc

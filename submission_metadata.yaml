@@ -1,0 +1,21 @@
+team_name: Ponnam Raja Shekar
+
+project_name: Redrob AI Ranker
+
+github_repo_url: TO_BE_ADDED
+
+approach:
+  semantic_search: Sentence Transformers + FAISS
+  ranking: Hybrid Scoring
+  embedding_model: all-MiniLM-L6-v2
+
+dataset:
+  candidates: 100000
+
+output:
+  shortlisted_candidates: 100
+
+features_used:
+  - semantic_score
+  - ai_skill_score
+  - experience_score

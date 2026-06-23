@@ -1,0 +1,8 @@
+numpy
+pandas
+faiss-cpu
+sentence-transformers
+scikit-learn
+tqdm
+python-docx
+streamlit
