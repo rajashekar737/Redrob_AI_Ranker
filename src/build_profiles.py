@@ -44,18 +44,23 @@ with open(INPUT_FILE, "r", encoding="utf8") as fin, \
         """
 
         profile = {
-            "candidate_id":
-            candidate["candidate_id"],
+    "candidate_id":
+    candidate["candidate_id"],
 
-            "text":
-            text,
+    "text":
+    text,
 
-            "experience":
-            candidate["profile"][
-                "years_of_experience"
-            ]
-        }
+    "experience":
+    candidate["profile"][
+        "years_of_experience"
+    ],
 
+    "redrob_signals":
+    candidate.get(
+        "redrob_signals",
+        {}
+    )
+}
         fout.write(
             json.dumps(profile)
             + "\n"

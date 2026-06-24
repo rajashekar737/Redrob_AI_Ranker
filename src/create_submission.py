@@ -11,8 +11,8 @@ submission["score"] = df["final_score"]
 submission["reasoning"] = (
     df["experience"].round(1).astype(str)
     + " years experience, AI skill score "
-    + df["ai_skill_score"].astype(str)
-    + ", strong semantic match to AI Engineer requirements."
+    + df["ai_skill_score"].round(2).astype(str)
+    + ", strong recruiter engagement, platform activity, and semantic alignment with role requirements."
 )
 
 submission.to_csv(
