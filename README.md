@@ -1,74 +1,203 @@
-\# Redrob AI Ranker
+# 🚀 Redrob AI Ranker
 
+AI-powered candidate ranking system built for the **India Runs Data & AI Challenge**.
 
+## 📌 Overview
 
-AI-powered candidate ranking system built for the India Runs Data \& AI Challenge.
+Redrob AI Ranker intelligently ranks job candidates by understanding both the **job description** and **candidate profiles**, rather than relying on simple keyword matching.
 
+The system combines semantic similarity, AI skill evaluation, behavioral signals, platform activity, and experience to generate an explainable shortlist of the best candidates.
 
+---
 
-\## Approach
+## ✨ Features
 
+* 📄 Job Description Understanding
+* 🔍 Semantic Candidate Search using Sentence Transformers
+* ⚡ FAISS Vector Search for efficient retrieval
+* 🤖 Hybrid AI Ranking Model
+* 👤 Behavioral Signal Analysis
+* 📈 Platform Activity Scoring
+* 🎯 Dynamic Weight Selection based on Job Requirements
+* 📝 Explainable Candidate Recommendations
 
+---
 
-1\. Extract skills from the Job Description.
+## 🏗️ System Architecture
 
-2\. Generate candidate profiles.
+```text
+Job Description
+        │
+        ▼
+Skill Extraction
+        │
+        ▼
+Sentence Transformer Embeddings
+        │
+        ▼
+FAISS Semantic Search
+        │
+        ▼
+Top 500 Candidates
+        │
+        ▼
+Feature Extraction
+ ├── Experience
+ ├── AI Skills
+ ├── Behavioral Signals
+ └── Platform Activity
+        │
+        ▼
+Dynamic Hybrid Ranking
+        │
+        ▼
+Top 100 Candidates
+        │
+        ▼
+Submission Generation
+```
 
-3\. Create semantic embeddings using Sentence Transformers.
+---
 
-4\. Build FAISS index for fast retrieval.
+## 🧠 Ranking Strategy
 
-5\. Retrieve Top 500 semantic matches.
+The final score combines multiple candidate quality indicators.
 
-6\. Apply hybrid ranking using:
+| Component           | Description                                          |
+| ------------------- | ---------------------------------------------------- |
+| Semantic Similarity | Candidate relevance to the job description           |
+| AI Skill Score      | AI/ML skill strength                                 |
+| Experience Score    | Relevant work experience                             |
+| Behavioral Score    | Recruiter engagement and hiring signals              |
+| Activity Score      | GitHub activity, endorsements and profile engagement |
 
-&#x20;  - Semantic Similarity Score
+The system dynamically adjusts scoring weights depending on the job description.
 
-&#x20;  - AI Skill Score
+---
 
-&#x20;  - Experience Score
+## 🛠️ Tech Stack
 
-7\. Generate Top 100 shortlisted candidates.
+* Python
+* Sentence Transformers
+* FAISS
+* Pandas
+* NumPy
+* Scikit-learn
 
+---
 
+## 📂 Project Structure
 
-\## Tech Stack
+```
+Redrob_AI_Ranker/
+│
+├── data/
+├── src/
+├── output/
+├── requirements.txt
+├── README.md
+└── submission_metadata.yaml
+```
 
+---
 
+## ▶️ How to Run
 
-\- Python
+Create a virtual environment
 
-\- Sentence Transformers
+```bash
+python -m venv venv
+```
 
-\- FAISS
+Activate it
 
-\- NumPy
+**Windows**
 
-\- Pandas
+```bash
+venv\Scripts\activate
+```
 
+Install dependencies
 
+```bash
+pip install -r requirements.txt
+```
 
-\## Repository Structure
+Build candidate profiles
 
+```bash
+python src/build_profiles.py
+```
 
+Generate embeddings
 
-\- src/ : Source code
+```bash
+python src/generate_embeddings.py
+```
 
-\- data/ : Input files
+Retrieve semantic matches
 
-\- requirements.txt : Dependencies
+```bash
+python src/retrieve_top500.py
+```
 
-\- submission\_metadata.yaml : Submission metadata
+Extract candidate features
 
+```bash
+python src/export_features.py
+```
 
+Generate behavioral scores
 
-\## Output
+```bash
+python src/calculate_behavior.py
+```
 
+Generate activity scores
 
+```bash
+python src/calculate_activity.py
+```
 
-The final submission is generated as:
+Run hybrid ranking
 
+```bash
+python src/hybrid_ranker.py
+```
 
+Generate Top 100
 
-output/submission.csv
+```bash
+python src/generate_top100.py
+```
 
+Create submission
+
+```bash
+python src/create_submission.py
+```
+
+---
+
+## 📊 Output
+
+The system generates:
+
+* Top 500 semantic matches
+* Final ranked candidate list
+* Top 100 shortlisted candidates
+* Submission CSV with explanations
+
+---
+
+## 🎯 Challenge Goal
+
+Build an AI-powered hiring assistant capable of understanding job requirements and recommending the most suitable candidates using semantic search and intelligent ranking.
+
+---
+
+## 👨‍💻 Author
+
+**Ponnam Raja Shekar**
+
+Built for the **India Runs Data & AI Challenge 2026**.
