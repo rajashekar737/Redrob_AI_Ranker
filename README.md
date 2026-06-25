@@ -1,7 +1,8 @@
 # 🚀 Redrob AI Ranker
 
-AI-powered candidate ranking system built for the **India Runs Data & AI Challenge**.
+> AI-powered candidate ranking system that combines semantic search, behavioral signals, platform activity, and hybrid scoring to intelligently match talent with job requirements.
 
+Built for the **India Runs Data & AI Challenge 2026**.
 ## 📌 Overview
 
 Redrob AI Ranker intelligently ranks job candidates by understanding both the **job description** and **candidate profiles**, rather than relying on simple keyword matching.
