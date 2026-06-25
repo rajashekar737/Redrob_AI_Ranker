@@ -23,42 +23,17 @@ The system combines semantic similarity, AI skill evaluation, behavioral signals
 
 ---
 
+
 ## 🏗️ System Architecture
 
-```text
-Job Description
-        │
-        ▼
-Skill Extraction
-        │
-        ▼
-Sentence Transformer Embeddings
-        │
-        ▼
-FAISS Semantic Search
-        │
-        ▼
-Top 500 Candidates
-        │
-        ▼
-Feature Extraction
- ├── Experience
- ├── AI Skills
- ├── Behavioral Signals
- └── Platform Activity
-        │
-        ▼
-Dynamic Hybrid Ranking
-        │
-        ▼
-Top 100 Candidates
-        │
-        ▼
-Submission Generation
-```
+![Architecture](images/architecture.png)
 
 ---
+## 📊 Sample Output
 
+The hybrid ranking model evaluates semantic similarity, experience, AI skills, behavioral signals, and platform activity to generate an explainable ranking of the best candidates.
+
+![Hybrid Ranking Output](images/output.png)
 ## 🧠 Ranking Strategy
 
 The final score combines multiple candidate quality indicators.
